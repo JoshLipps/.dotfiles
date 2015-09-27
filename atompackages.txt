@@ -1,0 +1,12 @@
+README.md
+atom-beautify
+atom-ternjs
+language-clojure
+linter
+linter-jshint
+linter-tidy
+merge-conflicts
+minimap
+nrepl
+sort-lines
+tabs-to-spaces

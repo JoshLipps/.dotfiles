@@ -1,0 +1,49 @@
+"*":
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    invisibles: {}
+    fontSize: 17
+  core:
+    disabledPackages: [
+      "vim-mode"
+      "linter-jscs"
+      "linter-tidy"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "ceb9b8ae-7591-f66f-49d6-98cc8de29b3c"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "419ea2744f53d2ea8d9152c6a7fb592935f9bee0"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "linter-scss-lint":
+    scssLintExecutablePath: "/usr/bin/scss-lint"
+  "atom-beautify":
+    _analyticsUserId: "cdc4d719-78a6-4ebc-95e3-815ed59fa59e"
+  linter:
+    subtleLinterErrors: [
+      "jshint"
+    ]
+    showErrorTabProject: false
+    showErrorTabLine: true
+    showErrorInline: false
+  "linter-csslint": {}
+  "autocomplete-plus": {}
+  minimap: {}
+  "linter-jshint": {}
+  "spell-check":
+    grammars: [
+      "source.js"
+    ]
+  "atom-ternjs": {}
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"
+  tabs:
+    usePreviewTabs: true
+    enableVcsColoring: true
