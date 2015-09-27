@@ -51,7 +51,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:$HOME/bin:/usr/local/share/python"
+export PATH="/usr/local/heroku/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:$HOME/bin:/usr/local/share/python"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 
@@ -85,15 +86,24 @@ alias aui="atom ~/code/Fusion/Apollo-admin/ui/app"
 alias cdf="cd ~/code/Fusion"
 alias cdb="cd ~/code/Fusion/build/expanded/fusion/bin"
 
-#NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+system_type=$(uname -s)
 
-ulimit -n 999
+if [ "$system_type" = "Darwin" ]; then
+  # eval $(gdircolors $HOME/.dir_colors)
 
-eval "$(pyenv init -)"
+  #NVM
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
 
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+  ulimit -n 999
+
+  eval "$(pyenv init -)"
+
+    if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+else
+  # eval $(dircolors -b $HOME/.dir_colors)
+fi
 
 #node completion
 . <(npm completion)
