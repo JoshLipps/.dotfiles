@@ -1,9 +1,9 @@
 [user]
 	name = Josh Lipps
-	email = josh.lipps@lucidworks.com
+	email = josh.lipps@gmail.com
 [core]
 	excludesfile = ~/.gitignore
-	editor = atom --wait
+	editor = vim
 [push]
 	default = simple
 [branch]
