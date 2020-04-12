@@ -1,0 +1,39 @@
+#include "/home/joshlipps/.themes/Xresources-themes/iterm-Zenburn.Xresources"
+
+
+URxvt.geometry: 87x20
+URxvt.internalBorder: 15
+URxvt.scrollBar: false
+URxvt.saveLines: 1000
+URxvt.scrollWithBuffer: true
+*foreground: #38b33f
+URxvt.background: #000000
+URxvt.cursorColor: #C0C0C0
+URxvt.cursorBlink: 1
+URxvt.lineSpace: 7
+URxvt.letterspace: 0
+URxvt.transparent: true
+URxvt.shading: 15
+/* disable deafult ctrl-shift behavior */
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+/* copy paste*/
+URxvt.perl-ext-common:  clipboard
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+/* urxvt */
+Xft.antialias: true
+Xft.hinting: false
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+/* fonts */
+URxvt.font:         xft:Hack-Regular:pixelsize=14,xft:Symbola
+URxvt.boldFont:     xft:Hack-Bold:pixelsize=14:weight=bold,xft:Symbola
+URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbola
+
+
+/* dpi */
+*.dpi: 144 
+
