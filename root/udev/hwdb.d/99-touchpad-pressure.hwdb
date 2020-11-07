@@ -1,0 +1,2 @@
+libinput:name:*ACPI0C50:00 18D1:5028 Touchpad:dmi:*svnGoogle:*pnEve*
+ LIBINPUT_ATTR_PRESSURE_RANGE=35:15
